@@ -14,6 +14,13 @@ html,body {
     height: 100%;
     width: 100%;
     transition: all linear 0.5s;
+    display: flex;
+    display: -webkit-flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
 
@@ -54,6 +61,7 @@ input{
 .slide-one {
     background: linear-gradient(-90deg, #E44D26, #F16529);
     left: 0;
+    text-transform: capitalize;
 }
 
 /*Slider 2 */
@@ -70,8 +78,11 @@ input{
 } 
 .slide-two {
      background: linear-gradient(-90deg, #56CCF2, #2F80ED);
+/*     background: linear-gradient(-90deg, #EF3B36, #FFFFFF);*/
     left: 100%;
 }
+
+
 
 /*Slider 3 */
 #slide-three:checked ~ .slider{
@@ -88,6 +99,33 @@ input{
 .slide-three {
      background: linear-gradient(-90deg, #E44D26, #F16529);
     left: 200%;
+}
+/*Slider 3 - Points*/
+.answer > label {
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    color: rgba(255, 255, 255,0);
+}
+/*Point 1*/
+.pointOne {
+/*    color: rgba(255, 255, 255,0);*/
+}
+#pointOne:checked ~ .answer .pointOne {
+    color: rgba(255, 255, 255,1);
+}
+/*Point 2*/
+.pointTwo {
+/*    color: rgba(255, 255, 255,0);*/
+}
+#pointTwo:checked ~ .answer .pointTwo {
+    color: rgba(255, 255, 255,1);
 }
 
 /*Slider 4 */
@@ -114,7 +152,9 @@ input{
 }
 */
 .slide-four {
-     background: linear-gradient(-90deg, #4AC29A, #BDFFF3);
+/*     background: linear-gradient(-90deg, #4AC29A, #BDFFF3);*/
+         background: linear-gradient(-90deg, #EF3B36, #FFFFFF);
+
     left: 200%;
     top: -110%;
     z-index: 100;
