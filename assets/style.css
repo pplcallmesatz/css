@@ -128,6 +128,14 @@ input{
     color: rgba(255, 255, 255,1);
 }
 
+
+
+
+
+
+
+
+
 /*Slider 4 */
 
 
@@ -159,3 +167,26 @@ input{
     top: -110%;
     z-index: 100;
 }
+/*Point 1*/
+.TypePointOne {
+/*    color: rgba(255, 255, 255,0);*/
+}
+#TypePointOne:checked ~ .answer .TypePointOne {
+    color: rgba(255, 255, 255,1);
+}
+/*Point 2*/
+.TypePointTwo {
+/*    color: rgba(255, 255, 255,0);*/
+}
+#TypePointTwo:checked ~ .answer .TypePointTwo {
+color: rgba(255, 255, 255,1);
+}
+
+/*Point 3*/
+.TypePointThree {
+/*    color: rgba(255, 255, 255,0);*/
+}
+#TypePointThree:checked ~ .answer .TypePointThree {
+color: rgba(255, 255, 255,1);
+}
+
