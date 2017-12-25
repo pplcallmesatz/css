@@ -1,0 +1,121 @@
+html,body {
+    height: 100%;
+    width: 100%
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform linear 0.5s;
+}
+.slider > div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all linear 0.5s;
+}
+
+
+
+
+input{
+    display: none;
+}
+.slide-controller {
+    width: 130px;
+    position: absolute;
+    left: calc(50% - 65px);
+    bottom: 50px;
+    z-index: 99999999;
+    text-align: center;
+}
+.slide-controller > label {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    white-space: nowrap;
+    display: none;
+        line-height: 50px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+/*Slider 1 */
+#slide-one:checked ~ .slider{
+    transform: translateX(0px);
+}
+#slide-one:checked ~ .slide-controller .two {
+      display: inline-block;
+    cursor: pointer;
+} 
+.slide-one {
+    background: linear-gradient(-90deg, #E44D26, #F16529);
+    left: 0;
+}
+
+/*Slider 2 */
+#slide-two:checked ~ .slider{
+   transform: translateX(-100%);
+}
+#slide-two:checked ~ .slide-controller .one  {
+      display: inline-block;
+    cursor: pointer;
+}
+#slide-two:checked ~ .slide-controller .three {
+      display: inline-block;
+    cursor: pointer;
+} 
+.slide-two {
+     background: linear-gradient(-90deg, #56CCF2, #2F80ED);
+    left: 100%;
+}
+
+/*Slider 3 */
+#slide-three:checked ~ .slider{
+    transform: translateX(-200%);
+}
+#slide-three:checked ~ .slide-controller .two  {
+      display: inline-block;
+    cursor: pointer;
+}
+#slide-three:checked ~ .slide-controller .four {
+      display: inline-block;
+    cursor: pointer;
+} 
+.slide-three {
+     background: linear-gradient(-90deg, #E44D26, #F16529);
+    left: 200%;
+}
+
+/*Slider 4 */
+
+
+#slide-four:checked ~ .slider{
+        transform: translateX(-200%);
+}
+#slide-four:checked ~ .slider .slide-four{
+    top: 0;
+}
+
+#slide-four:checked ~ .slide-controller .three  {
+      display: inline-block;
+    cursor: pointer;
+}
+#slide-four:checked ~ .slide-controller .five {
+      display: inline-block;
+    cursor: pointer;
+} 
+/*
+#slider-four:checked ~ .slider .slide-three{
+    top:0;
+}
+*/
+.slide-four {
+     background: linear-gradient(-90deg, #4AC29A, #BDFFF3);
+    left: 200%;
+    top: -110%;
+    z-index: 100;
+}
